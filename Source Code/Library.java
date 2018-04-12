@@ -1,13 +1,9 @@
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.time.LocalDateTime;
-import java.time.month;
-import java.time.temporal.ChronoUnit;
+
 import java.ArrayList;
 
 public class Library {
 	
-
+		
 
 		private ArrayList<Book> books = new ArrayList<Book>();
 		private ArrayList<Dvd> dvds = new ArrayList<Dvd>();
@@ -42,7 +38,7 @@ public class Library {
 		
 		for(int i = 0; i < dvds.size(); i++){
         
-		if(dvdsTitleSearch.equalsIgnoreCase(dvds.get(i).getTitle())){
+		if(dvdTitleSearch.equalsIgnoreCase(dvds.get(i).getTitle())){
             return books.get(i).toString();
         }
     }
