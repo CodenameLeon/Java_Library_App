@@ -1,0 +1,75 @@
+ library has patrons that check out a variety of materials:
+
+books
+
+dvd
+
+ 
+
+Patrons have
+
+Name
+
+email address
+
+ 
+
+All Books have
+
+id
+
+title
+
+author
+
+date checked out (if currently checked out)
+
+patron that has it checked out (if currently checked out)
+
+ 
+
+All DVDs have
+
+id
+
+title
+
+rating
+
+date checked out
+
+patron that has it checked out (if currently checked out)
+
+ 
+
+All Library materials should be able to return
+
+due date
+
+if overdue
+
+who has checked out/if checked out
+
+fine based on returned date
+
+ 
+
+Patrons should be able to tell:
+
+how many items a patron has checked out
+
+if has any overdue items
+
+ 
+
+A Patron should be able to:
+
+check out an item - should return true or false… true if the book is checked out. false if the book can’t be checked out (an item can’t be checked out if another patron already has it or if the patron has any overdue items)
+
+check an item back in - the amount of late fee, if any, should be returned
+
+ 
+
+Type of Material	Check out Period	Fine
+DVD	7 days	$1/day
+Book	28 days	$.25/day
